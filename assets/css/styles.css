@@ -45,8 +45,6 @@ a:hover {
 
 body {
   font-family: var(--font-family);
-  width: 100%;
-  overflow-x: hidden;
 }
 
 
@@ -264,10 +262,6 @@ nav li:hover {
   margin: 0.5rem;
 }
 
-.icon {
-  width: 7.875rem;
-  /* Skills section ends */
-}
 
 /* Projects section */
 .projects {
@@ -514,20 +508,6 @@ nav li:hover {
 
 /* Contacts section ends */
 
-/* Scroll to top button */
-.scroll-up {
-  position: fixed;
-  right: 0.5%;
-  bottom: 3%;
-  cursor: pointer;
-}
-
-.up-arrow {
-  width: 3rem;
-  height: 3rem;
-}
-/* Scroll to top button ends */
-
 /* General (utilities) */
 .icon-card {
   background-color: #fff;
@@ -570,8 +550,8 @@ footer {
 }
 
 .footer-img {
-  max-height: 15rem;
-  max-width: 15rem;
+  max-height: 5rem;
+  max-width: 5rem;
 }
 /* Footer section ends */
 
@@ -583,7 +563,7 @@ footer {
     z-index: 1;
   }
   nav ul {
-    position: fixed;
+    position: relative;
     background-color: var(--bg-color);
     flex-direction: column;
     top: 86px;
@@ -614,12 +594,10 @@ footer {
   }
 
   .hero-img {
-    gap: 0;
     width: 40.5rem;
   }
 
   .bio {
-    margin-top: -7rem;
     width: 20.5rem;
     text-align: left;
   }
@@ -627,7 +605,6 @@ footer {
   .more-about {
     border-top: rgb(0, 0, 0) 1px solid;
     padding-top: 2rem;
-    padding: 1rem 3.5rem;
   }
 
   .more-about h2 {
@@ -638,16 +615,21 @@ footer {
     text-align: justify;
   }
 
+  .skills {
+    padding-top: 5rem;
+  }
+
   .icon {
-    width: 8.25rem;
-    height: 8.25rem;
+    width: 7.25rem;
+    height: 7.25rem;
+  }
+
+  .projects {
+    padding-top: 1.6rem;
   }
 
   .projects-container {
     flex-direction: column;
-  }
-
-  .project-container {
     width: 20.875rem;
   }
 
@@ -664,6 +646,14 @@ footer {
     display: block;
   }
 }
+@keyframes message_lr {
+  0% {
+  transform: translate(-50%, 250%);
+  }
+  100% {
+  transform: translate(900%, 100%);
+  }
+  }
 
 @media screen and (max-width: 420px) {
 
@@ -671,26 +661,46 @@ footer {
     display: flex;
     align-items: center;
     text-align: center;
+    width: 100%;
+  }
+  .navigation {
+    display: none;
   }
 
   nav h1 {
     font-size: 100px;
     font-family: 'Bebas Neue', cursive;
     color: #faf9f8;
-    text-align: right;
+    text-align: left;
   }
   
   .hero {
-    margin-top: 10rem;
-    flex-direction: column;
-  }
-
-  .hero-img {
-    width: 1rem;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .bio {
-    width: 18.3rem;
+    line-height: 2rem;
+    padding-bottom: 14rem;
+  }
+
+  .bio h2 {
+    padding-top: 1rem;
+
+  }
+  .bio p{
+    line-height: 1.4rem;
+    padding: -5rem;
+  }
+
+  .icon {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
   }
 
   .project-container {
@@ -703,8 +713,7 @@ footer {
     background-color: #ededed00;
   }
   .airplane{
-    animation-iteration-count: 2;
-    animation-duration: 7s;
+    display: none;
   }
 }
 
