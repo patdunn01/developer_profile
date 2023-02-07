@@ -45,6 +45,8 @@ a:hover {
 
 body {
   font-family: var(--font-family);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -577,7 +579,7 @@ footer {
 @media screen and (max-width: 720px) {
   nav {
     padding: 0.5rem 1rem;
-    position: sticky;
+    position: fixed;
     z-index: 5;
   }
   nav ul {
