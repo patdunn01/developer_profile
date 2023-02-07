@@ -626,11 +626,11 @@ footer {
 
   .projects {
     padding-top: 1.6rem;
+    justify-content: center;
   }
 
   .projects-container {
     flex-direction: column;
-    width: 20.875rem;
   }
 
   .contact-form-container {
