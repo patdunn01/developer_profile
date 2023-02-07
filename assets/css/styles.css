@@ -58,7 +58,6 @@ nav {
   z-index: 1;
   top: 0;
   left: 0;
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -114,7 +113,7 @@ nav li:hover {
 /* Hero section */
 .hero {
   position: relative;
-  z-index: 1;
+  z-index: 5;
   background-color: white;
   display: flex;
   align-items: center;
@@ -211,7 +210,7 @@ nav li:hover {
 .more-about {
   font-family: 'Old Standard TT', serif;
   position: relative;
-  z-index: 1;
+  z-index: 5;
   background-color: #ededed;
   padding: 2.5rem;
 }
@@ -276,7 +275,7 @@ nav li:hover {
   font-family: 'Bebas Neue', cursive;
   font-size: 1.35rem;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   background-color: white;
   margin-top: -2rem;
   padding-top: 4rem;
@@ -556,6 +555,7 @@ nav li:hover {
 
 /* Footer section */
 footer {
+  z-index: 1;
   position: sticky;
   bottom: 0;
   left: 0;
@@ -579,8 +579,8 @@ footer {
 @media screen and (max-width: 720px) {
   nav {
     padding: 0.5rem 1rem;
-    position: fixed;
-    z-index: 5;
+    position: sticky;
+    z-index: 1;
   }
   nav ul {
     position: fixed;
