@@ -262,6 +262,10 @@ nav li:hover {
   margin: 0.5rem;
 }
 
+.icon {
+  width: 9rem;
+}
+
 
 /* Projects section */
 .projects {
