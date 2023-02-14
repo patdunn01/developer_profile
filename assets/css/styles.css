@@ -285,8 +285,8 @@ nav li:hover {
 }
 
 .project-pic {
-  width: 65%;
-  height: 60%;
+  max-width: 10rem;
+  
 }
 
 .projects-container {
@@ -311,7 +311,7 @@ nav li:hover {
 }
 
 .project-title {
-  margin-bottom: var(--bottom-margin);
+  margin-bottom: 1rem;
 }
 
 .project-details {
@@ -554,9 +554,13 @@ footer {
 }
 
 .footer-img {
-  max-height: 5rem;
-  max-width: 5rem;
+  max-height: 10rem;
 }
+
+.footer-icons{
+  width: 3rem;
+}
+
 /* Footer section ends */
 
 /* Media queries for responsiveness */
