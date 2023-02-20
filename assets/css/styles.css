@@ -397,8 +397,6 @@ nav li:hover {
   height: 10rem;
   margin-top: -25rem;
   margin-bottom: 0rem;
-  margin-right: auto;
-  margin-left: auto;
   animation-name: message_lr;
   animation-iteration-count: 4;
   animation-duration: 4s;
@@ -411,6 +409,15 @@ nav li:hover {
   transform-box: fill-box;
   animation-iteration-count: 4;
 }
+
+@keyframes message_lr {
+  0% {
+  transform: translate(50%, 250%);
+  }
+  100% {
+  transform: translate(450%, 80%);
+  }
+  }
 
 @keyframes plane {
   0% {
@@ -499,14 +506,7 @@ nav li:hover {
   }
 }
 
-@keyframes message_lr {
-  0% {
-  transform: translate(-50%, 250%);
-  }
-  100% {
-  transform: translate(900%, 100%);
-  }
-  }
+
 
 
 
@@ -561,14 +561,31 @@ footer {
   width: 3rem;
 }
 
+.footer-icons:hover{
+  border: 1px #f14546 solid;
+  border-radius: 10px;
+}
+
 /* Footer section ends */
 
+
+
 /* Media queries for responsiveness */
+
+@media screen and (max-width: 980px) {
+
+  .airplane{
+    display: none;
+  }
+}
+
+
 @media screen and (max-width: 720px) {
   nav {
     padding: 0.5rem 1rem;
     position: sticky;
     z-index: 1;
+    display: none;
   }
   nav ul {
     position: relative;
@@ -647,11 +664,24 @@ footer {
     background-color: #ededed00;
   }
   .airplane{
-    animation-iteration-count: 10;
-    animation-duration: 10s;
+    display: none;
   }
   nav .burger-menu{
-    display: block;
+    display: none;
+  }
+
+  .footer{
+    align-items: left;
+  }
+
+  .footer-img {
+    margin-left: -5rem;
+    float: left;
+  }
+
+  .footer-icons{
+    margin-left: 5rem;
+    width: 2rem;
   }
 }
 @keyframes message_lr {
@@ -659,7 +689,7 @@ footer {
   transform: translate(-50%, 250%);
   }
   100% {
-  transform: translate(900%, 100%);
+  transform: translate(470%, 100%);
   }
   }
 

@@ -1,0 +1,19 @@
+{
+  "name": "developer_profile",
+  "version": "1.0.0",
+  "description": "A portfolio website template for campers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patdunn01/developer_profile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patdunn01/developer_profile/issues"
+  },
+  "homepage": "https://github.com/patdunn01/developer_profile#readme"
+}
