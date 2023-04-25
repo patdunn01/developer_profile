@@ -423,8 +423,8 @@ nav li:hover {
   0% {
     transform: scaleY(1);
   }
-  50% {
-    transform: scaleY(1.5);
+  30% {
+    transform: scaleY(1.4);
   }
   100% {
     transform: scaleY(1);
@@ -531,10 +531,19 @@ nav li:hover {
 
 .project-card {
   background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
+  border-radius: 30px;
+  /* box-shadow: 0 3px 10px var(--primary-shadow); */
+  border: 12px solid #f14546;
   padding: 20px;
-  margin: 10px;
+  margin: 25px;
+}
+
+.project-link{
+  color: #282b3e;
+}
+
+.project-link:hover{
+  color: #f14546;
 }
 
 /* Footer section */
